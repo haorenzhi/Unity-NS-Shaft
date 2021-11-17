@@ -1,0 +1,2 @@
+Sprite: http://logok.org/target-logo/
+Audio1: https://orangefreesounds.com/mario-coin-sound/#google_vignette
