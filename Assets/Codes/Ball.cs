@@ -5,6 +5,7 @@ public class Ball : MonoBehaviour
 {
     // Start is called before the first frame update
     public AudioClip scoresound;
+    public AudioClip hitsound;
     private AudioSource source;
     private Rigidbody2D rigidBody;
     private Vector2 leftvelocity;
@@ -42,6 +43,7 @@ public class Ball : MonoBehaviour
             ResetScene();
         }
         if (IsTouchedScreen(gameObject)){
+            source.PlayOneShot(hitsound);
             Time.timeScale = 0;
             Termination.showText();
         }
@@ -68,6 +70,7 @@ public class Ball : MonoBehaviour
     {
         if (collision.gameObject.tag == "Orb")
         {
+            source.PlayOneShot(hitsound);
             Time.timeScale = 0;
             Termination.showText();
         }

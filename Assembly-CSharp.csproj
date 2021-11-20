@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{0951E3F1-31F9-4DB3-ADFB-17B35853B4A8}</ProjectGuid>
+    <ProjectGuid>{E2645F40-FB80-7BFA-5364-F745EAE23A5F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -53,13 +53,16 @@
     <UnityVersion>2020.3.18f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="D:\Visual Studio\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Codes\Termination.cs" />
     <Compile Include="Assets\Codes\Record.cs" />
     <Compile Include="Assets\Codes\Ball.cs" />
     <Compile Include="Assets\Codes\ScoreKeeper.cs" />
+    <Compile Include="Assets\Codes\Orb.cs" />
     <Compile Include="Assets\Codes\Pedal.cs" />
     <Compile Include="Assets\Codes\Spawner.cs" />
-    <Compile Include="Assets\Codes\Termination.cs" />
-    <Compile Include="Assets\Codes\Orb.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
